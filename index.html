@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  
+<script>
+    var userNumber= +prompt("Введите число","");
+    function drowStar (userNumber){
+        var star = "";
+
+        for (i = 1; i <= userNumber; i++) {
+            for(j = 1; j <= i; j++)  {
+                star +="*"
+            }
+            star += "\n"
+        }
+        return star
+    };
+    alert(drowStar(userNumber));
+
+
+
+    function sum (a, b) {
+        return a + b;
+    }
+    function f (a = 2, b = 3, c) {
+        if (c=c && typeof c==="function") {
+            function c();
+        } else {
+            function sum();
+        }
+        return c || sum;
+   }
+</script>
+</body>
+</html>
