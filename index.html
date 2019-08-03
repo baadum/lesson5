@@ -9,6 +9,7 @@
 <body>
   
 <script>
+    // 1
     var userNumber= +prompt("Введите число","");
     function drowStar (userNumber){
         var star = "";
@@ -23,19 +24,28 @@
     };
     alert(drowStar(userNumber));
 
-
+    // 2
+    function pow(d) {
+        return d * d;
+    }
 
     function sum (a, b) {
         return a + b;
     }
-    function f (a = 2, b = 3, c) {
-        if (c=c && typeof c==="function") {
-            function c();
-        } else {
-            function sum();
+
+    function f (a, b, c) {
+        a = a || 2;
+        b = b || 3;
+
+        if(c && typeof c === 'function') {
+            return pow(a);
         }
-        return c || sum;
-   }
+        else {
+            return sum(a,b);
+        }
+    }
+    console.log(f(3, 5, pow));
+
 </script>
 </body>
 </html>
