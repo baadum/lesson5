@@ -38,13 +38,13 @@
         b = b || 3;
 
         if(c && typeof c === 'function') {
-            return pow(a);
+            return c(a);
         }
         else {
             return sum(a,b);
         }
     }
-    console.log(f(3, 5, pow));
+    console.log(f(10, 10, pow));
 
 </script>
 </body>
